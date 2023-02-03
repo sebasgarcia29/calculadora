@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'package:calculadora/screens/calculator_screen.dart';
 
@@ -9,10 +10,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      home: const CalculatorScreen(),
+      home: CalculatorScreen(),
       theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: Colors.black),
     );
   }
